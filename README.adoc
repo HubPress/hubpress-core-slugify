@@ -1,0 +1,8 @@
+= HubPress: slugify
+
+Based on http://stringjs.com/[string.js]
+
+== TODO
+
+. Complete this README
+. Add tests
