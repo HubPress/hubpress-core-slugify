@@ -8,7 +8,7 @@
     "prepublish": "npm run compile",
     "test": "mocha --compilers js:babel-core/register",
     "cover": "babel-node ./node_modules/.bin/isparta cover _mocha -- --compilers js:babel-core/register",
-    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
+    "coveralls": "npm run cover -- --reporter mocha-lcov-reporter && cat ./coverage/lcov.info | coveralls"
   },
   "author": "Anthonny Quérouil <anthonny.querouil@gmail.com> (http://anthonnyquerouil.fr)",
   "license": "MIT",
