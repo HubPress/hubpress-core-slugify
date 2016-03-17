@@ -9,5 +9,7 @@ export default (strValue) => {
   let sl = dasherize(new S(new S(strValue).latinise().s.replace(/[^\w\s-]/g, ''))).s;
   if (sl.charAt(0) === '-')
     sl = sl.substr(1);
+  if (sl.charAt(sl.length-1) === '-')
+    sl = sl.substr(0, sl.length-1);
   return (new S(sl)).s;
 }

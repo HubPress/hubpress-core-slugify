@@ -19,4 +19,16 @@ describe('Slugify', () => {
   it('should remove first caret', () => {
     slugify('-Aword').should.equal('Aword');
   });
+
+  it('should keep T-A-G', () => {
+    slugify('T-A-G').should.equal('T-A-G');
+  });
+
+  it('should remove last caret', () => {
+    slugify('Aword-').should.equal('Aword');
+  });
+
+  it('should be empty if only caret', () => {
+    slugify('-----').should.equal('');
+  });
 });
