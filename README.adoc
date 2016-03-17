@@ -1,5 +1,8 @@
 = HubPress: slugify
 
+image:https://travis-ci.org/HubPress/hubpress-core-slugify.svg?branch=master["Build Status", link="https://travis-ci.org/HubPress/hubpress-core-slugify"]
+image:https://coveralls.io/repos/github/HubPress/hubpress-core-slugify/badge.svg?branch=master[coverage status, link=https://coveralls.io/github/HubPress/hubpress-core-slugify?branch=master]
+
 Based on http://stringjs.com/[string.js]
 
 == TODO
