@@ -31,4 +31,8 @@ describe('Slugify', () => {
   it('should be empty if only caret', () => {
     slugify('-----').should.equal('');
   });
+
+  it('should not add a caret if Uppercase is not follow by a lowewrcase', () => {
+    slugify('IoT').should.equal('IoT');
+  });
 });

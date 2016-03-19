@@ -1,7 +1,7 @@
 import S from 'string';
 
 function dasherize (value) {
-  const s = value.trim().s.replace(/[_\s]+/g, '-').replace(/(?![A-Z])(.)([A-Z])/g, '$1-$2').replace(/([A-Z])([A-Z])([a-z0-9])/g, '$1-$2').replace(/-+/g, '-');
+  const s = value.trim().s.replace(/[_\s]+/g, '-').replace(/(?![A-Z])(.)([A-Z])([a-z0-9])/g, '$1-$2$3').replace(/([A-Z])([A-Z])([a-z0-9])/g, '$1-$2').replace(/-+/g, '-');
   return new S(s);
 }
 
