@@ -35,4 +35,9 @@ describe('Slugify', () => {
   it('should not add a caret if Uppercase is not follow by a lowewrcase', () => {
     slugify('IoT').should.equal('IoT');
   });
+
+  // Test to verify that https://github.com/HubPress/hubpress.io/issues/369 is now fixed
+  it('should conserv acronym', () => {
+    slugify('A JDBC Gateway Microservice').should.equal('A-JDBC-Gateway-Microservice');
+  });
 });
